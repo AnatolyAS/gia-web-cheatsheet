@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Перечень вопросов</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+
+    <nav class="menu">
+      <a class="menu-btn active" href="index.html">Перечень вопросов</a>
+      <a class="menu-btn" href="tasks.html">Практические задания (задачи)</a>
+    </nav>
+
+    <div class="topbar">
+      <input
+        class="topbox"
+        id="queryInput"
+        type="text"
+        value=""
+        placeholder="Введите часть вопроса"
+      />
+    </div>
+
+    <table class="faq" id="faqTable">
+      <colgroup>
+        <col class="col-num">
+        <col class="col-q">
+        <col class="col-arr">
+      </colgroup>
+
+      <tr class="group">
+        <td id="groupTitleCell" colspan="3"></td>
+      </tr>
+      <!-- строки добавит JS -->
+    </table>
+  </div>
+
+  <script src="data-questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
